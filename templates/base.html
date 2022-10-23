@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Главная</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Блог</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Обо мне</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Создать</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Войти</button>
+        <button type="button" class="btn btn-primary">Регистрация</button>
+        <button type="button" class="btn btn-outline-primary me-2">Выйти</button>
+      </div>
+    </header>
+  </div>
+    {% block content %}
+    {% endblock content %}
+    {% block main_page %}
+    {% endblock main_page %}
+    {% block footer %}
+    {% endblock footer %}
+
+</body>
+</html>
